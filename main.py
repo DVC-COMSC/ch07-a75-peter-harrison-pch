@@ -11,11 +11,15 @@ if len(num1) > len(num2):
 # Make your Code
 # ******************************
 
+subset = "is"
 for i in range(len(num2)-len(num1) + 1):
 	if num1 == num2[i:(i+len(num1))]:
-		print("subset")
+		subset = "is"
 		break
-	else: print("not")
+	else: 
+		subset = "is not"
+		
+print(f"num2 {subset} a subset of num1")
 
 """
 startin = 0
